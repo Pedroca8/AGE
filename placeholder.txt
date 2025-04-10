@@ -1,0 +1,30 @@
+# Configuração Atual do Site de Páscoa
+
+## O que já está funcionando:
+- As fotos da pasta "img" já foram configuradas no slideshow
+- A estrutura da página está completa e responsiva
+- As animações e interações estão implementadas
+
+## O que falta configurar:
+
+1. **ovo-pascoa.png** - Você pode adicionar uma imagem de ovo de Páscoa personalizada:
+   - Adicione uma imagem chamada "ovo-pascoa.png" na pasta "img"
+   - Caso não adicione, será usada uma imagem padrão da internet
+
+2. **musica.mp3** - Adicione uma música especial:
+   - Coloque um arquivo chamado "musica.mp3" na pasta principal
+   - Escolha uma música significativa para vocês
+   - Formatos suportados: mp3, ogg, wav (para outros formatos, edite o HTML)
+
+3. **Mensagem personalizada** - A mensagem atual é genérica e pode ser personalizada:
+   - Edite o arquivo script.js
+   - Procure pela variável CONFIG e altere o texto da mensagem
+   - Personalize com palavras e sentimentos específicos para sua namorada
+
+## Como testar o site:
+1. Abra o arquivo index.html em qualquer navegador
+2. Clique no botão para ver o slideshow com suas fotos
+3. Clique no ovo de Páscoa para ver a mensagem secreta
+4. Clique no botão de música para testar o áudio (se já tiver adicionado)
+
+Aproveite para tornar este presente ainda mais especial e personalizado! 

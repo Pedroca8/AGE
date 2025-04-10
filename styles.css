@@ -1,0 +1,284 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffe6f2;
+    background-image: linear-gradient(45deg, #ffe6f2 25%, #fff1f9 25%, #fff1f9 50%, #ffe6f2 50%, #ffe6f2 75%, #fff1f9 75%, #fff1f9 100%);
+    background-size: 56.57px 56.57px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    margin: 15px;
+}
+
+/* Botão Inicial */
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.botao-container {
+    text-align: center;
+    animation: pulsar 1.5s infinite;
+}
+
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+#botao-surpresa {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    transition: all 0.3s ease;
+}
+
+#botao-surpresa:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(255, 107, 107, 0.6);
+}
+
+#botao-surpresa:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(255, 107, 107, 0.4);
+}
+
+/* Seção de Mensagem */
+.mensagem-pascoa {
+    text-align: center;
+}
+
+.cabecalho {
+    margin-bottom: 20px;
+}
+
+.cabecalho h1 {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.decoracao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 24px;
+    color: #ff8e8e;
+}
+
+.ovo-pascoa, .coelho {
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.coelho {
+    animation-delay: 0.5s;
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: contain;
+    background-color: #f8f8f8;
+}
+
+.slide.ativa {
+    opacity: 1;
+}
+
+/* Mensagem Personalizada */
+.mensagem-personalizada {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ovo-container {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.ovo-container:hover {
+    transform: scale(1.05);
+}
+
+.ovo-imagem {
+    max-width: 150px;
+    animation: balanco 3s ease-in-out infinite;
+}
+
+@keyframes balanco {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+.mensagem-secreta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 280px;
+    width: 100%;
+    display: none;
+    z-index: 10;
+}
+
+.mensagem-secreta p {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Controles de Música */
+.controles-musica {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.controles-musica iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animações */
+@keyframes entradaSuave {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mensagem-pascoa {
+    animation: entradaSuave 1s ease-out;
+}
+
+/* Cores de Páscoa e Decorações */
+.cor-pastel {
+    color: #ffaaa5;
+}
+
+/* Adaptação para celular */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    #botao-surpresa {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+    
+    .cabecalho h1 {
+        font-size: 1.5rem;
+    }
+    
+    .slideshow-container {
+        height: 250px;
+    }
+    
+    .ovo-imagem {
+        max-width: 120px;
+    }
+    
+    .mensagem-secreta {
+        max-width: 250px;
+        padding: 10px;
+    }
+    
+    .mensagem-secreta p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Confetes */
+.confete-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+}
+
+.confete {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top: -50px;
+    animation: cair 5s linear forwards;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(0) rotate(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg) scale(0.7);
+        opacity: 0;
+    }
+} 

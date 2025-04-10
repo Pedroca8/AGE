@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Páscoa, Amor!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inicio">
+            <div class="botao-container">
+                <button id="botao-surpresa">Aperte aqui para uma surpresa!</button>
+            </div>
+        </div>
+
+        <div class="mensagem-pascoa" style="display: none;">
+            <div class="cabecalho">
+                <h1>Feliz Páscoa, Meu Amor!</h1>
+                <div class="decoracao">
+                    <span class="ovo-pascoa"><i class="fas fa-egg"></i></span>
+                    <span class="coelho"><i class="fas fa-carrot"></i></span>
+                    <span class="ovo-pascoa"><i class="fas fa-egg"></i></span>
+                </div>
+            </div>
+
+            <div class="slideshow-container">
+                <!-- As imagens serão inseridas por JavaScript -->
+            </div>
+
+            <div class="mensagem-personalizada">
+                <div class="ovo-container">
+                    <img src="img/ovo-pascoa.png" onerror="this.onerror=null; this.src='https://static.vecteezy.com/system/resources/previews/018/887/491/original/easter-egg-icon-png.png';" alt="Ovo de Páscoa" class="ovo-imagem">
+                    <div id="mensagem-secreta" class="mensagem-secreta">
+                        <!-- A mensagem personalizada será inserida aqui pelo JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="controles-musica">
+                <iframe src="https://open.spotify.com/embed/track/0GjWvVr7TZzceNwdSDRuXy?utm_source=generator" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
